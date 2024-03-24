@@ -1,0 +1,73 @@
+
+
+/* Definición de colores pastel */
+:root {
+    --color-primario: #a7c5eb; /* Azul pastel */
+    --color-secundario: #d7c0e3; /* Morado pastel */
+    --color-terciario: #f3c4fb; /* Rosa pastel */
+    --color-verde: #a9e190; /* Verde pastel */
+    --color-rojo: #f4ac6d; /* Rojo pastel */
+    --color-amarillo: #ffe07c; /* Amarillo pastel */
+    --color-azul-claro: #add8e6; /* Azul claro pastel */
+    --color-naranja: #ffb347; /* Naranja pastel */
+  }
+  
+  /* Estilos para los botones */
+  .btn {
+    /* Cambiar el color de fondo y el borde */
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    color: #fff; /* Cambiar el color del texto a blanco */
+  }
+  
+  /* Estilos para el botón de éxito (verde) */
+  .btn-success {
+    background-color: var(--color-verde); /* Verde pastel */
+    border-color: var(--color-verde);
+  }
+  
+  /* Estilos para el botón de peligro (rojo) */
+  .btn-danger {
+    background-color: var(--color-rojo); /* Rojo pastel */
+    border-color: var(--color-rojo);
+  }
+  
+  /* Estilos para el botón de edición (amarillo) */
+  .btn-primary {
+    background-color: var(--color-amarillo); /* Amarillo pastel */
+    border-color: var(--color-amarillo);
+  }
+  .btn-primary {
+    background-color: var(--color-amarillo); /* Amarillo pastel */
+    border-color: var(--color-amarillo);
+  }
+
+  .btn-primary:hover {
+    background-color: #ffce00; /* Amarillo más oscuro */
+    border-color: #ffce00;
+  }
+  
+  /* Estilos para el botón de añadir (verde claro) */
+  .btn-success {
+    background-color: var(--color-verde); /* Verde pastel */
+    border-color: var(--color-verde);
+  }
+  
+  /* Estilos para el botón de cancelar (azul claro) */
+  .btn-secondary {
+    background-color: var(--color-azul-claro); /* Azul claro pastel */
+    border-color: var(--color-azul-claro);
+  }
+  
+  /* Estilos para el botón de info (azul claro) */
+  .btn-info {
+    background-color: var(--color-azul-claro); /* Azul claro pastel */
+    border-color: var(--color-azul-claro);
+  }
+  
+  /* Estilos para el botón de advertencia (naranja) */
+  .btn-warning {
+    background-color: var(--color-naranja); /* Naranja pastel */
+    border-color: var(--color-naranja);
+  }
+  

@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Usuarios</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                    <td>2</td>
+                    <td>Usuario 2</td>
+                    <td>usuario2@example.com</td>
+                    <td>
+                        <!-- Botones de acción -->
+                        <button type="button" class="btn btn-primary"><i class="fas fa-edit"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <!-- Puedes agregar más filas aquí -->
+            </tbody>
+        </table>
+        <!-- Botón para añadir nuevo usuario -->
+        <button type="button" class="btn btn-success">Añadir Usuario</button>
+    </div>
+</body>
+
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
