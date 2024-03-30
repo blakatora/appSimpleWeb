@@ -20,6 +20,9 @@ from aplicacion import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('clientes/', views.clientes, name='clientes'),
+    path('clientes/', views.clientes, name='clientes'),    
+    path('agregar_cliente/', views.agregar_cliente, name='agregar_cliente'),
+    path('detalle_moto/<str:matricula>/', views.detalle_moto, name='detalle_moto'),
+
 
 ]

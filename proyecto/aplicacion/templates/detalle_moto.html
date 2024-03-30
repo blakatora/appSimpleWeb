@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparaciones de Moto</title>
+    <style>
+        /* Estilos CSS aquí */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .moto-info {
+            width: 45%;
+        }
+        .reparaciones {
+            width: 45%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="moto-info">
+            <h2>Información de la Moto</h2>
+            <p><strong>Modelo:</strong> {{ moto.modelo }}</p>
+            <p><strong>Marca:</strong> {{ moto.marca }}</p>
+            <p><strong>Color:</strong> {{ moto.color }}</p>
+            <p><strong>Año de Fabricación:</strong> {{ moto.año_fabricacion }}</p>
+            <p><strong>Cilindrada:</strong> {{ moto.cilindrada }}</p>
+            <p><strong>Precio:</strong> {{ moto.precio }}</p>
+        </div>
+        <div class="reparaciones">
+            <h2>Reparaciones Realizadas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Fecha</th>
+                        <th>Precio Total</th>
+                        <th>Kilometros</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for reparacion in reparaciones %}
+                    <tr>
+                        <td>{{ reparacion.descripcion }}</td>
+                        <td>{{ reparacion.fecha }}</td>
+                        <td>{{ reparacion.precio_total }}</td>
+                        <td>{{ reparacion.kilometros }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
